@@ -244,7 +244,7 @@ my $tester = dbixcsl_common_tests->new(
                     )
 EOF
 
-                $dbh1->do($_) for $auto_inc_cb->('oracle_loader_test4', 'id');
+                $dbh1->do($_) for $auto_inc_cb->("$schema1.oracle_loader_test4", 'id');
 
                 $dbh1->do("GRANT ALL ON oracle_loader_test4 TO $schema2");
                 $dbh1->do("GRANT ALL ON oracle_loader_test4_id_seq TO $schema2");
