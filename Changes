@@ -1,7 +1,7 @@
 Revision history for Perl extension DBIx::Class::Schema::Loader
 
         - Allow coderef maps to call back into the hashref mapping code
-	- Fix detection of qualified sequence names for Oracle (RT#90341)
+        - Fix detection of qualified sequence names for Oracle (RT#90341)
 
 0.07037  2013-10-30
         - Allow overriding individual moniker parts

@@ -353,6 +353,9 @@ EOF
                     is try { $rsrc->column_info('id')->{is_auto_increment} }, 1,
                         'column in schema1';
 
+                    is try { $rsrc->column_info('id')->{sequence} }, "$schema1.oracle_loader_test4_id_seq",
+                        'sequence in schema1';
+
                     is try { $rsrc->column_info('value')->{data_type} }, 'varchar2',
                         'column in schema1';
 
